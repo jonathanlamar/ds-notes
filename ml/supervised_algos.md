@@ -270,4 +270,10 @@ Thus, if $y$ is the true label for a particular value of $x$, then
 
 ## K Nearest Neighbors
 
-**TODO**
+Extremely simple algorithm.  Assume the rows of $X$ exist in a metric space with
+metric $d$ (usually euclidean space, but we could use a cosine-like metric for
+high dimensional datasets).  For any point $x$ in the matrix, the predicted
+label for $x$, $\hat{y}$, is computed by considering the $k$ rows of $X$ which
+are closest to $x$ with respect to the metric $d$, and assigning $\hat{y}$ to be
+the most common label among them.  Ties are broken either randomly or defaulting
+to the class with greatest prior probability, or some other systematic process.
