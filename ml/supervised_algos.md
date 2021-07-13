@@ -133,7 +133,7 @@ evaluate the estimate?
 
 ## Logistic Regression
 
-**TODO:** Explain in terms of GLMs.
+**TODO:** Explain in terms of GLMs as well as in terms of perceptrons.
 
 ## Decision Tree Classifier
 
