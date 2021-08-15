@@ -6,7 +6,6 @@ from sklearn.ensemble import GradientBoostingRegressor
 import sklearn.datasets as data
 from pandas import DataFrame
 import numpy as np
-from IPython import embed
 
 
 class Bootstrap:
