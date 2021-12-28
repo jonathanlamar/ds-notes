@@ -37,13 +37,14 @@ $$
 where
 
 $$
-\mathbb{P}(y=c \vert X=x) = \frac{\prod_j\mathbb{P}(X^{(j)} = x_j \vert y = c)}
-{\mathbb{P}(y = c)}.
+\mathbb{P}(y=c \vert X=x) = \frac{\prod_j\mathbb{P}(X^{(j)} = x_j \vert y = c)\cdot\mathbb{P}(y=c)}
+{\mathbb{P}(X = x)}.
 $$
 
 The numerator of the right hand side of this equation is obtained via the kernel
-density estimations on the columns of $X$, and the denominator is based on the
-distribution of values of $y$.
+density estimations on the columns of $X$, as well as the distribution of values
+of $y$.  The denominator is assumed to be uniformly distributed, and therefore
+is ignored in the argmax calculation.
 
 ### Notes
 
